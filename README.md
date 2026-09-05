@@ -6,8 +6,15 @@ Casks for [ToolPiper](https://modelpiper.com/toolpiper), the local AI toolkit an
 
 ```sh
 brew tap modelpiper/tap
+brew trust modelpiper/tap
 brew install --cask toolpiper
 ```
+
+The middle line is not optional on Homebrew 6. A cask served from any tap outside
+Homebrew's own is refused with `Refusing to load cask modelpiper/tap/toolpiper from
+untrusted tap modelpiper/tap` until the tap is trusted once. `brew trust` records the
+decision in `~/.homebrew/trust.json` and you never repeat it. Nothing else about the
+install changes, and `brew upgrade` afterwards needs no further trust.
 
 Then launch ToolPiper from Applications. macOS shows its usual first-launch dialog for an app downloaded from the internet; the cask does not remove that dialog, and it appears once.
 
