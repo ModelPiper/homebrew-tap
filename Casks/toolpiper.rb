@@ -1,6 +1,6 @@
 cask "toolpiper" do
-  version "0.0.9-beta,63"
-  sha256 "0aabb0423fa5adaf3409ba2a40514d39d711af4dec0bb4e4ef8c05a7dbf1196c"
+  version "0.0.10-beta,65"
+  sha256 "64138d9725fae55cfa784ad0df73c6ba2377737fa10c78e71b76f35102336824"
 
   url "https://releases.modelpiper.com/ToolPiper-#{version.csv.first}-#{version.csv.second}.dmg"
   name "ToolPiper"
@@ -13,8 +13,8 @@ cask "toolpiper" do
   end
 
   auto_updates true
-  depends_on macos: :tahoe
   depends_on arch: :arm64
+  depends_on macos: :tahoe
 
   app "ToolPiper.app"
 
