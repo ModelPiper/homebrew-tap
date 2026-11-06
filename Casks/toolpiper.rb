@@ -1,6 +1,6 @@
 cask "toolpiper" do
-  version "0.0.10-beta,65"
-  sha256 "64138d9725fae55cfa784ad0df73c6ba2377737fa10c78e71b76f35102336824"
+  version "0.0.10-beta,68"
+  sha256 "426c3982e649f722a9466ef975920c6295b435ce0fd0af9c55c963be9cd12e32"
 
   url "https://releases.modelpiper.com/ToolPiper-#{version.csv.first}-#{version.csv.second}.dmg"
   name "ToolPiper"
